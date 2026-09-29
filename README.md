@@ -117,8 +117,6 @@ receiver topology: laser diode source, photodiode front end, LM358 gain
 stage, Arduino either side carrying sensor data. They are included because
 they show that topology working, not as evidence for this design.
 
-> TODO: replace this line with what the related build actually was and when.
-
 ![Optical link running end to end](images/link-running.png)
 
 Transmitter on the right with a DHT11 and an infrared sensor attached,
