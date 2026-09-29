@@ -109,18 +109,49 @@ See [`hardware/bom.csv`](hardware/bom.csv). Headline parts:
 | hs-244 | Servo motor, beam alignment |
 | 3386F-103-ND | 10 kΩ potentiometers, drive and gain trim |
 
+## Related build
+
+The photographs below are **not** of the boards this schematic describes.
+They are from a separate optical link built on the same transmitter and
+receiver topology: laser diode source, photodiode front end, LM358 gain
+stage, Arduino either side carrying sensor data. They are included because
+they show that topology working, not as evidence for this design.
+
+> TODO: replace this line with what the related build actually was and when.
+
+![Optical link running end to end](images/link-running.png)
+
+Transmitter on the right with a DHT11 and an infrared sensor attached,
+receiver on the left, beam crossing the gap between them into a second
+Arduino.
+
+![Transmitter and receiver boards with audio connected](images/boards-with-audio-link.jpg)
+
+Both ends on solder board. The op-amps sit in DIP sockets so they could be
+swapped during bring-up, a trimmer sets gain, and each side runs from its
+own 9 V battery so there is no shared ground between transmitter and
+receiver. Audio in and out through the 3.5 mm jacks.
+
+![Transmitter on breadboard above the receiver board](images/transmitter-breadboard-and-receiver.jpg)
+
+The transmitter kept on breadboard while the drive circuit was still
+changing, laser diode at the edge pointing down at the receiver. The red
+bloom is the beam scattering off the board surface, which is also how
+alignment was judged by eye.
+
 ## Status and next steps
 
 The link was built on solder board and demonstrated carrying both audio and
-sensor telemetry, as shown above.
+sensor telemetry.
 
 Outstanding work:
 
-1. Scope captures at the receiver output. The photographs show the link
-   working but not what the recovered waveform looks like, which is the
-   evidence that would let simulated and measured behaviour be compared
-   directly.
-2. Record a measured range, data rate and audio bandwidth figure.
+1. Photographs of these boards. The images in this repository are from a
+   related build, so the hardware this schematic describes is not yet shown
+   anywhere.
+2. Scope captures at the receiver output, so simulated and measured
+   behaviour can be compared directly.
+3. Record a measured range, data rate and audio bandwidth figure.
 
 ## Licence
 
