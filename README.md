@@ -137,20 +137,6 @@ changing, laser diode at the edge pointing down at the receiver. The red
 bloom is the beam scattering off the board surface, which is also how
 alignment was judged by eye.
 
-## Status and next steps
-
-The link was built on solder board and demonstrated carrying both audio and
-sensor telemetry.
-
-Outstanding work:
-
-1. Photographs of these boards. The images in this repository are from a
-   related build, so the hardware this schematic describes is not yet shown
-   anywhere.
-2. Scope captures at the receiver output, so simulated and measured
-   behaviour can be compared directly.
-3. Record a measured range, data rate and audio bandwidth figure.
-
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
